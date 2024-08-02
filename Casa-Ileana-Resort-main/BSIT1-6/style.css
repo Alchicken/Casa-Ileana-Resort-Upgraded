@@ -1,0 +1,225 @@
+/* Youth Line font */
+@import url('https://fonts.cdnfonts.com/css/youth-line-personal-use');
+
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 2756px) {
+    body {
+        background-size: 100% auto;
+    }
+    .spinner-wrapper {
+        background-size: 100% auto;
+    }
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        width: 100%;
+    }
+}
+@media (max-width: 550px){
+    footer p {
+        text-align: justify;
+    }
+    section {
+        padding: 5%;
+    }
+    h2 {
+        padding-top: 5%;
+    }
+}
+@media (min-width: 361px){
+    #casa {
+        padding-bottom: 5rem;
+    }
+}
+@media (max-width: 360px){
+    #casa {
+        padding-bottom: 2rem;
+    }
+    
+}
+@media (max-width: 409px) {
+    #casaileana {
+        font-size: 4rem;
+    }
+}
+@media (min-width: 410px) and (max-width: 788px) {
+    #casaileana {
+        font-size: 5.5rem;
+    }
+}
+@media (min-width: 789px) and (max-width: 2756px) {
+    #casaileana {
+        font-size: 6.3rem;
+    }
+}
+@media (min-width: 551px) and (max-width: 991px) {
+    #contact {
+        padding-top: 5%;
+    }
+}
+@media (max-width: 286px) {
+    .btn-lg {
+        padding: 2%;
+    }
+    #bookWord, #readWord {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 337px) {
+    #casaileana {
+        padding-top: 12%;
+    }
+}
+@media (max-width: 337) {
+    #gallery {
+        padding: 0;
+    }
+}
+@media (min-width: 408px) and (max-width: 767px){
+    #mommyImg, #daddyImg {
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #mommyImg, #daddyImg {
+        max-width: 75%;
+    }
+}
+
+
+.btn-lg {
+    font-family:'Montserrat', sans-serif!important;
+}
+
+.btn-lg:hover {
+    color: #c2cab5;
+}
+
+
+/* SPINNER STYLES */
+.spinner-wrapper {
+    background-image: url(loader-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: all 0.2s;
+}
+.spinner-border {
+    color: rgb(0, 67, 0); 
+    width: 5rem; 
+    height: 5rem;  
+}
+.spinner-wrapper.hidden {
+    opacity: 0;
+}
+
+
+
+/* NAVBAR STYLES */
+.navbar {
+    background: rgba(245, 241, 237);
+    /*opacity: 0.7;*/
+    border-bottom: 5px solid #74A12E;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar.scrolled {
+    background-color: #404140; /* Set new background color when scrolled */
+    color: #e2e2e2;
+}
+.navbar .scrolled-link {
+    color: rgba(245, 241, 237); /* Bagong kulay ng link kapag nag-scroll */
+}
+.navbar.visible {
+    top: 0; /* Show the navbar */
+    opacity: 1; /* Make the navbar visible */
+}
+
+.navbar-brand {
+    font-family: 'Youth line - Personal Use', san-serif;
+    font-size: 4rem;
+    color: #74A12E;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+.navbar-brand:hover {
+    color: #74A12E;
+}
+.nav-item {
+    font-size: 1.5rem;
+    margin-right: 2em;
+}
+.navvlink {
+    position: absolute;
+}
+#homeLink:hover,#galleryLink:hover,#contactLink:hover,#faqLink:hover, #aboutDropdown:hover {
+    color: #74A12E;
+}
+#homeBorder:hover::after, #galleryBorder:hover::after, #contactBorder:hover::after, #faqBorder:hover::after, #aboutBorder:hover::after  {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #74A12E;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+
+}
+
+
+
+#background {
+    padding-top: 1rem;
+    background: rgba( 132, 198, 56, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.fw-bold {
+    margin-left: .5rem;
+}
+
+.dropdown-item:hover {
+    background-color: #74A12E;
+    color: white;
+}
+
+.facebook-icon {
+    font-size: 2rem;
+}
+
+.card {
+    min-height: 100%;
+  }
+
+.card-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.email-list-item {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+

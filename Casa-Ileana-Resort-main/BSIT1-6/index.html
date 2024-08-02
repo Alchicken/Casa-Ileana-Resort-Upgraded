@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS CDN LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    
+    <!-- Link for fonts that we use on our headers -->
+    <link href="https://fonts.cdnfonts.com/css/youth-line-personal-use" rel="stylesheet">
+    <!-- Link for BOOTSTRAP Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Link for CSS External file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon for Website page-->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Casa Ileana</title>
+</head>
+<body>
+
+
+
+    <!-- Loader/Spinnner of the Website-->
+    <div  id="content" class="spinner-wrapper align-items-center justify-content-center">
+        <div class="spinner-border " role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+   <!-- NAVBAR-->
+    <div id="navbar" class="navbar navbar-expand-lg navbar-light pt-sm-3 fixed-top">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">Casa Ileana</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li id="homeBorder" class="nav-item">
+                        <a id="homeLink" href="#" class="nav-link">Home</a>
+                    </li>
+                    <li id="aboutBorder" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About</a>
+                        <!-- Dropdown for About -->
+                        <ul class="dropdown-menu text-center" aria-labelledby="aboutDropdown" style="background-color: rgb(173, 173, 173)">
+                            <li><a class="dropdown-item" href="#background"><span class="lead fw-bold">Background</span></a></li>
+                            <li><a class="dropdown-item" href="#service"><span class="lead fw-bold">Service Rates/Offers</span></a></li>
+                            <li><a class="dropdown-item" href="#owners"><span class="lead fw-bold">Owners</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="galleryBorder" class="nav-item">
+                        <a id="galleryLink" href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li id="contactBorder" class="nav-item">
+                        <a id="contactLink" href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li id="faqBorder" class="nav-item">
+                        <a id="faqLink" href="#faq" class="nav-link">FAQ's</a>
+                    </li>
+                    <li id="adminBorder" class="nav-item">
+                        <a id="adminLink" href="index.php" class="nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <section id="home" class="container-fluid text-light px-1 pt-2 pt-lg-5 text-center" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(carousel.jpg); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; margin-top: 8%;">
+        <div class="container mt-5 py-5">
+            <div class="align-items-center justify-content-between">
+                <div id="casa">
+                    <h1 id="casaileana" class="display-1" style="font-family: 'Youth line - Personal Use', san-serif;">Casa <span id="casaileana" style="color:rgba(116,161,46); font-family: 'Youth line - Personal Use', san-serif;">Ileana</span></h1>
+                    <p class="lead my-4" style="font-size: 2rem;">Your home away from home, experience summer with our private pool worth 3 fully airconditioned
+                        rooms. </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-evenly">
+                    <a id="bookWord" href="#"><button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#book" style="margin-bottom: 9%; background: #74A12E;">Book now</button></a>
+                    <a id="readWord" href="#background"><button class="btn btn-lg" style="margin-bottom: 9%;background: #74A12E;">Read more</button></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="background" class="text-dark p-lg-5 p-sm-2 text-start" style="background: rgb(147, 147, 147);">
+        <div class="container mt-lg-4 mt-sm-2 py-lg-5 py-sm-2">
+            <h2 class="pt-sm-5"><span class="badge mb-4" style="background: rgba(116,161,46); cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">ABOUT</span></h2>
+            <div id="backgroundAbout" class="row align-items-center justify-content-between">
+                <div class="col-md-6 pb-lg-2">
+                    <img src="carousel1.jpg" class="img-fluid" alt="Casa Ileana Photo">
+                </div>
+                <div class="col-md p-lg-5">
+                    <!--<h2 class="display-3" style="font-family: Arial, Helvetica, sans-serif; color: rgb(224, 217, 217);">Background</h2>-->
+                    <p class="lead fs-5 text-light" style="text-align: justify;">
+                        Looking for an extraordinary venue that will leave your guests in awe? Look no further than Casa Ileana! With its breathtaking surroundings, impeccable service, and versatile event spaces, Casa Ileana guarantees an unforgettable experience that will make your special occasion truly magical. Whether it's a wedding, birthday celebration, or corporate retreat, let Casa Ileana be the backdrop to your most cherished memories. Book now and let us create an enchanting event that will exceed your wildest expectations!.Raymond Reyes and Clarence Reyes established the new resort known as Casa Ileana.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="service" class="container mt-5 py-lg-5">
+            <hr>
+            <h2><span class="badge mb-4" style="background: rgba(116,161,46); cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">SERVICE RATES</span></h2>
+            <img class="img-thumbnail rounded" src="rates.jpg" alt="Service Rates Of Casa Ileana">
+        </div>
+    </section>
+
+    <!-- OWNERS -->
+		<section id="owners" class="p-lg-4 p-sm-5" style="background: rgba(116,161,46);">
+			<div class="container">
+				<h2 class="text-center text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">CASA ILEANA OWNERS</h2>
+				<p class="lead text-center text-white mb-5">
+				Hard working owners.
+				</p>
+				<div class="row justify-content-center align-items-stretch gap-4">
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light d-flex flex-column">
+							<div class="card-body text-center d-flex flex-column align-items-center justify-content-between">
+								<img id="daddyImg" src="daddy.jpg" class="rounded-circle mb-3" alt="/" style="height: auto;">
+								<h3 class="card-title mb-3">Raymond Reyes</h3>
+								<p class="card-text lead" style="text-align: justify;">His seafaring career involved ship work and voyages across oceans. He served diverse roles as a crew member and gained valuable experience in maritime logistics, navigating the seas, and maintaining ship operations during extended periods away from home.</p>
+								<a href="https://www.facebook.com/raymond.reyes.5895" target="_blank"><i class="bi bi-facebook facebook-icon"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light d-flex flex-column">
+							<div class="card-body text-center d-flex flex-column align-items-center justify-content-between">
+								<img id="mommyImg" src="mommy.jpg" class="rounded-circle mb-3" alt="/" style="height: auto;">
+								<h3 class="card-title mb-3 mt-4" >Clarence Reyes</h3>
+								<p class="card-text lead" style="text-align: justify;">She is a businesswoman that handle their business since Raymond Reyes was working on a ship and sailing across the seas. Then 10 years later Raymond Reyes retired from being a seaman to help Clarence Reyes handle the business and to grow as well.
+								</p>
+								<a href="https://www.facebook.com/klarenzgodino" target="_blank"><i class="bi bi-facebook facebook-icon"></i></a>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="p-sm-4" style="background-color: rgb(224, 217, 217);">
+            <div class="container mt-5 py-5">
+                <h2><span class="badge mb-4" style="background: rgba(116,161,46); cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">GALLERY</span></h2>
+                <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <img src="carousel1.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="carousel2.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="carousel3.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <img src="carousel4.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <img src="carousel6.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <img src="carousel7.jpg" class="d-block w-100" alt="Casa Ileana Photos">
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>          
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="p-lg-5" style="background-color: rgba(116,161,46,0.2);">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-md-6">
+						<h2><span class="badge mb-4" style="background: #74A12E; cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">CONTACT INFO</span></h2>
+						<ul class="list-group list-group-flush lead">
+							<li class="list-group-item">
+								<p><i class="bi bi-geo-alt-fill"></i><span class="fw-bold">Location:</span> Barangay, Blk 1 Lot 5 Netherland St. Green Breeze 4 Brgy, Brgy Sampaloc 3, Dasmariñas, 4114 Cavite</p>
+							</li>	
+							<li class="list-group-item">                            
+								<p><i class="bi bi-telephone-fill"></i><span class="fw-bold">Phone:</span> (+63) 917 818 9859</p>
+							</li>
+							<li class="list-group-item text-wrap">                           
+								<p class="text-wrap"><i class="bi bi-envelope-fill"></i><span class="fw-bold text-wrap">Email:</span> klarenzgodino@gmail.com </p>
+							</li>
+						</ul>
+					</div>
+                    <div class="col-md-6">
+                            <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10935.769305685273!2d120.9752375369689!3d14.28943803832878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5eb06bd598d%3A0x1cbbba148e77e293!2sCasa%20Ileana!5e0!3m2!1sen!2sph!4v1685691079745!5m2!1sen!2sph"
+                                width="500" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                    </div>
+				</div>
+			</div>
+		</section>
+
+        <!-- FAQ's -->
+        <section id="faq" class="p-md-5">
+            <div class="container-sm">
+                <div class="col-md-6" style="word-wrap: break-word;">
+                    <h2><span class="badge mb-4 text-wrap" style="background: #74A12E; cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">FREQUENTLY ASKED QUESTIONS</span></h2>
+                </div>
+                
+                <div class="accordion accordion-flush" id="Casa Ileana FAQ">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        What is the exact location of the resort?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#Casa Ileana FAQ">
+                        <div class="accordion-body">
+                        The resort is located in the heart of the city of Dasmariñas.<br>
+                        <strong>Exact location is  Barangay, Blk 1 Lot 5 Netherland St. Green Breeze 4 Brgy, Brgy Sampaloc 3, Dasmariñas, 4114 Cavite.</strong>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Can we bring our own food?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#Casa Ileana FAQ">
+                        <div class="accordion-body">
+                        <strong>Yes</strong>, you can bring your own foods.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Do you have internet access? 
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#Casa Ileana FAQ">
+                        <div class="accordion-body">
+                        <strong>Yes</strong>, we have free internet access. Just ask the resort staff for guidance as needed.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            Are pets allowed?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#Casa Ileana FAQ">
+                        <div class="accordion-body">
+                        <strong>Yes</strong>, your pets are allowed.<br><strong class="text-danger">Reminder: </strong> Please be responsible to your pets.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            What is the maximum number of people that can be accommodated?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#Casa Ileana FAQ">
+                        <div class="accordion-body">
+                            We can accomodate <strong>30pax</strong>.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Feedback Form -->
+        <section id="feedback" class="p-lg-5" >
+            <div class="container pb-5 pt-4" style="background-color: #74A12E; border-radius: 2%;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2><span class="badge mb-4" style="background: #74A12E; cursor: default; font-family: Georgia, 'Times New Roman', Times, serif;">FEEDBACK FORM</span></h2>
+                        <form id="feedback-form" action="feedbackFolder/submit_feedback.php" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="fw-bold form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="fw-bold form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="fw-bold form-label">Feedback:</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="fw-bold btn btn-light">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-relative">
+			<div class="container text-center">
+				<h2 style="font-family: 'Youth line - Personal Use', san-serif; font-size: 3rem;">Casa <span style="color: #74A12E;">Ileana</span></h2>
+                <p class="lead mt-lg-4 mt-sm-2">Your home away from home, experience summer with our private pool worth 3 fully airconditioned rooms.</p>
+                <p class="lead">Copyright &copy; 2023 Casa Ileana. All rights reserved.</p> 
+                <a href="#home" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+			</div>
+		</footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="book" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="enrollLabel">Casa <span style="color:#74A12E;">Ileana</span></h1>
+                        <span style="color: gainsboro; font-size: 1.5rem;">&nbsp; |</span>
+                        <h3 class="modal-title">Reservation</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Fill out this form and we will get back to you.</p>
+                        <form id="reservation-form" action="reserve/res.php" method="POST">
+                            <div class="mb-3">
+                                <label for="first-name" class="col-form-label">First Name:</label>
+                                <input type="text" class="form-control" id="first-name" name="first_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="col-form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="last-name" name="last_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="col-form-label">Date:</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" id="submit-reservation">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--- FOR RESERVATION -->
+        <script>
+            $(document).ready(function() {
+                $('#submit-reservation').click(function() {
+                    // Gather form data
+                    var formData = {
+                        'first_name' : $('#first_name').val(),
+                        'last_name'  : $('#last_name').val(),
+                        'email'      : $('#email').val(),
+                        'phone'      : $('#phone').val(),
+                        'date'       : $('#date').val()
+                    };
+            
+                    // Submit via AJAX
+                    $.ajax({
+                        type        : 'POST', // Method type
+                        url         : 'reserve/res.php', // URL where you handle the form submission
+                        data        : formData, // Form data object
+                        dataType    : 'json', // Data type
+                        encode      : true
+                    })
+                    .done(function(data) {
+                        // Handle successful response here, e.g., show success message
+                        alert('Reservation successfully submitted!');
+                        // Optionally, clear form fields
+                        $('#reservation-form')[0].reset();
+                        // Close modal
+                        $('#book').modal('hide');
+                    })
+                    .fail(function(data) {
+                        // Handle error response here, e.g., show error message
+                        alert('Error submitting reservation. Please try again.');
+                    });
+            
+                    // Prevent default form submission
+                    event.preventDefault();
+                });
+            });
+            </script>
+        
+
+
+    <!--BOOTSTRAP JS CDN LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    
+    <!--- Use AJAX to send form data to dbh.inc.php without reloading the page. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS EXTERNAL FILE -->
+    <script src="function.js"></script>
+
+</body>
+</html>
